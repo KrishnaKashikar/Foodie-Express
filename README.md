@@ -1,2 +1,2 @@
 # Foodie-Express
-A responsive food Website
+A Responsive Food Website
