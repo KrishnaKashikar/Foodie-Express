@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Contact Us - Foodie Express</title>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/5787/5787100.png" alt="Logo" class="h-10">
+                <h1 class="text-2xl font-bold ml-4">Foodie Express</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="../responsive.html" class="hover:text-gray-600">Home</a></li>
+                    <li><a href="services.html" class="hover:text-gray-600">Services</a></li>
+                    <li><a href="about.html" class="hover:text-gray-600">About</a></li>
+                    <li><a href="contact.html" class="text-orange-500 font-semibold">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-700">Address</h4>
+                            <p class="text-gray-600">123 Food Street<br>Cityville, ST 12345</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700">Phone</h4>
+                            <p class="text-gray-600">(123) 456-7890</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700">Email</h4>
+                            <p class="text-gray-600">info@foodieexpress.com</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700">Hours</h4>
+                            <p class="text-gray-600">Monday - Sunday<br>10:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Foodie Express</h3>
+                    <p class="text-gray-400">Delivering happiness one meal at a time</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../responsive.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <p class="text-gray-400">123 Food Street, City</p>
+                    <p class="text-gray-400">Phone: (123) 456-7890</p>
+                    <p class="text-gray-400">Email: info@foodieexpress.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
