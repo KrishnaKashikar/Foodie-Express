@@ -1,0 +1,142 @@
+/* Custom Styles for Food Delivery Website */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Food Item Card Hover Effect */
+.food-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Button Animation */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section Overlay */
+.hero-overlay {
+    backdrop-filter: blur(2px);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Navigation */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #f97316;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform-origin: top;
+}
+
+#mobile-menu.hidden {
+    opacity: 0;
+    transform: scaleY(0);
+}
+
+/* Food Category Cards */
+.category-card {
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* Contact Form Inputs */
+.form-input {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
+
+/* Image Hover Effects */
+.hover-zoom {
+    overflow: hidden;
+}
+
+.hover-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer Links */
+.footer-link {
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    padding-left: 0.5rem;
+}
+
+/* Loading Animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loading {
+    animation: spin 1s linear infinite;
+}
+
+/* Price Tag Animation */
+.price-tag {
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover .price-tag {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* Food Item Images */
+.w-full.h-48.object-cover {
+    object-position: center;
+}
